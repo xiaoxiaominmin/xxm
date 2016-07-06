@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+	<h1>jsonp跨域</h1>
+	<script>
+
+			function getdata(data){
+				console.log(data);
+			}
+
+			function createScript(url,callback){
+				//创建 sccript
+				//
+				var script=document.createElement("script");
+				script.src=url+"?callback="+fn;
+				document.body.appendChild(sccript);
+			}
+
+
+	</script>
+	
+	<script src="http://127.0.0.1:8088/shixun11111/jsonp(getjson)/data.php?callback=getdata"></script>
+	
+</body>
+</html>
